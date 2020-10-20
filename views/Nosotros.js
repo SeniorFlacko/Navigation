@@ -1,9 +1,15 @@
 import React from 'react';
-import {View, StyleSheet, Text} from 'react-native';
+import {View, StyleSheet, Text, Button} from 'react-native';
 const Nosotros = (props) => {
   return (
     <View style={styles.contenedor}>
       <Text>Nosotos works!!</Text>
+      <Button
+        title="Volver"
+        onPress={() => {
+          props.navigation.navigate('Inicio');
+        }}
+      />
     </View>
   );
 };

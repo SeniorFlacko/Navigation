@@ -20,7 +20,17 @@ const App: () => React$Node = () => {
   return (
     <>
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="Inicio">
+        <Stack.Navigator
+          initialRouteName="Inicio"
+          screenOptions={{
+            headerStyle: {
+              backgroundColor: '#F4511E',
+            },
+            headerTintColor: 'white',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+            },
+          }}>
           <Stack.Screen
             name="Inicio"
             component={Inicio}
